@@ -1,0 +1,9 @@
+Vibhor Singh|vibsin95@gmail.com|code to print factorial
+#include
+-----------------------------------------
+Emily Cook|chudson@yahoo.com|Open-architected actuating archive
+
+-----------------------------------------
+Christina Barry|cameron87@yahoo.com|Triple-buffered intangible moratorium
+
+-----------------------------------------
