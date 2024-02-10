@@ -558,6 +558,27 @@
 				<li>Accenture: App Development Sr Analyst : :</li>
 				<li>Fidelity: Sr Analyst Programmer : :</li>
                       </ol> 
+			    <script>
+			    var time_diff=0, yrs_diff=0;
+
+var jobExperience = [
+  {date_began:'2001-02-01', date_ended:'2009-03-01'},
+  {date_began:'2004-06-01', date_ended:'2020-08-01'},
+  {date_began:'2005-04-01', date_ended:'2021-03-01'},
+  {date_began:'2008-07-01', date_ended:'2016-06-01'}
+];
+for(let i=0; i<jobExperience.length; i++){
+  let date_1, date_2;
+  let began = jobExperience[i].date_began.split('-');
+  let ended = jobExperience[i].date_ended.split('-');
+  date_1 = new Date(began[1]+'/'+began[2]+'/'+began[0]);
+  date_2 = new Date(ended[1]+'/'+ended[2]+'/'+ended[0]);
+  time_diff += date_2.getTime() - date_1.getTime();
+}
+yrs_diff = parseInt(time_diff/(1000 * 3600 * 24 * 365));
+document.write(yrs_diff);
+				    
+			    </script>
                     </form>
                   </div>
                 </div>
