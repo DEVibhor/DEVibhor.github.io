@@ -560,15 +560,7 @@
                       </ol> 
 			    <script>
 			    var time_diff=0, yrs_diff=0;
-const date = new Date();
-
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-
-// This arrangement can be altered based on how we want the date's format to appear.
-let currentDate = `${year}-${month}-${day}`;
-console.log(currentDate); // "2024-03-13"
+var currentDate = new Date().toJSON().slice(0,10);
 var jobExperience = [
   {date_began:'2017-10-23', date_ended:'2020-01-03'},
   {date_began:'2020-02-10', date_ended:'2021-01-29'},
