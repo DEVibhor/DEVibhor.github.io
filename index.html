@@ -24,7 +24,21 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
 
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
 
 </head>
 
@@ -551,6 +565,7 @@
                   </div>
                   <div>
                     <form action="action.php" method="post" role="form" class="contactForm">
+			    <div style="overflow-x:auto;">
                     <table>
   <tr>
     <th>Company</th>
@@ -589,6 +604,7 @@
     <td></td>
   </tr>
 </table>
+				    </div>
 			    <script>
 			    var time_diff=0, yrs_diff=0;
 var currentDate = new Date().toJSON().slice(0,10);
