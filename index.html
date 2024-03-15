@@ -576,11 +576,11 @@ function m1900(yyyymmdd) {
   return (y - 1900) * 12 + m;
 }
 
-				    function cdate 
+				    function cdate()
 				    {  var c_date= new Date().toJSON().slice(0,10);
-				    return c_date;
+				    document.getElementById("demo").innerHTML = c_date;
 				    }
-document.getElementById("demo").innerHTML = c_date;
+cdate();
 jobExperience.forEach(job => {
   const m1 = m1900(job.date_began);
   const m2 = m1900(job.date_ended);
