@@ -552,11 +552,11 @@
                   <div>
                     <form action="action.php" method="post" role="form" class="contactForm">
                       <ol>
-  				<li>Wipro: Project Engineer : :</li>
-  				<li>Curl: Jr Data Scientist : :</li>
-  				<li>HCL: Specialist : :</li>
-				<li>Accenture: App Development Sr Analyst : :</li>
-				<li>Fidelity: Sr Analyst Programmer : :</li>
+  				<li>Wipro: Project Engineer : '2017-10-23' -- '2020-01-03':</li>
+  				<li>Curl: Jr Data Scientist : '2020-02-10' -- '2021-01-29':</li>
+  				<li>HCL: Specialist : '2021-02-11' -- '2021-10-29' :</li>
+				<li>Accenture: App Development Sr Analyst : '2021-11-09' -- '2022-10-12' :</li>
+				<li>Fidelity: Sr Analyst Programmer : '2022-10-17' -- <p id="demo"></p> :</li>
                       </ol> 
 			    <script>
 			    var time_diff=0, yrs_diff=0;
@@ -576,6 +576,11 @@ function m1900(yyyymmdd) {
   return (y - 1900) * 12 + m;
 }
 
+				    function cdate 
+				    {  var c_date= new Date().toJSON().slice(0,10);
+				    return c_date;
+				    }
+document.getElementById("demo").innerHTML = c_date;
 jobExperience.forEach(job => {
   const m1 = m1900(job.date_began);
   const m2 = m1900(job.date_ended);
